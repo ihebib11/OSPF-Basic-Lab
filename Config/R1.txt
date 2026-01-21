@@ -1,0 +1,16 @@
+### Assign IPAddress to the interface g1 between R1<->R2 as shown in the topology
+interface g1
+ ip address 10.0.0.1 255.255.255.252
+ no shutdown
+
+### Assign IPAddress to the interface g3 between R1<->LAN1(Area1) as shown in the topology
+interface g3
+ ip address 192.168.1.1 255.255.255.0
+ no shutdown
+
+### OSPF
+router ospf 1                          ## Enable OSPF process 1
+ router-id 1.1.1.1                     ## Assign a unique router ID
+ network 10.0.0.0 0.0.0.3 area 0       ## Advertise link to R2 in Area 0 (backbone)
+ network 192.168.1.0 0.0.0.255 area 1  ## Advertise LAN network in Area 1
+ passive-interface g3                  ## Make LAN interface passive (no OSPF hellos to reduces CPU load)
