@@ -31,6 +31,7 @@ After configuring OSPF on all routers, we check the neighbor adjacencies to ensu
 ### R1(CSR) OSPF IP routes
 <img width="713" height="288" alt="show ip route ospf on R1" src="https://github.com/user-attachments/assets/23121a9e-e9cc-440e-84f7-756549378a97" />
 
+--------------------
 
 ### R2(CSR2) OSPF Neighbors
 <img width="694" height="96" alt="Neighbors R2" src="https://github.com/user-attachments/assets/28982c27-a7a7-4ec7-92e1-67d22b14ecdb" />
@@ -38,6 +39,7 @@ After configuring OSPF on all routers, we check the neighbor adjacencies to ensu
 ### R2(CSR2) OSPF IP routes
 <img width="705" height="256" alt="show ip route ospf on R2" src="https://github.com/user-attachments/assets/b54b6150-2e90-4d66-bff3-acbbad35fbae" />
 
+--------------------
 
 ### R3(CSR3) OSPF Neighbors
 <img width="750" height="232" alt="Neighbors R3" src="https://github.com/user-attachments/assets/03b86f96-0fae-48eb-8f37-da5fbbb6ae5c" />
@@ -45,8 +47,11 @@ After configuring OSPF on all routers, we check the neighbor adjacencies to ensu
 ### R3(CSR3) OSPF IP routes
 <img width="712" height="286" alt="show ip route ospf on R3" src="https://github.com/user-attachments/assets/53ad3394-89f5-4ee0-abac-83de50946ab6" />
 
+--------------------
+
 ### TEST Connectivity From VPC on Area1 to VPCs on Area2 and Area3
 <img width="641" height="353" alt="ping from area1 to area 2 et area3" src="https://github.com/user-attachments/assets/275b9937-6ac7-4ea2-88db-136b4b073138" />
+-> After OSPF was configured, all VPCs and routers can ping each other successfully, confirming full network connectivity.
 
 ### Configuration
 Find configs for all 3 routers (R1, R2, R3) are in the `configs/` folder.
