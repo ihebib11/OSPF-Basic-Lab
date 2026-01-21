@@ -43,6 +43,7 @@ After configuring OSPF on all routers, we check the neighbor adjacencies to ensu
 
 ### R3(CSR3) OSPF Neighbors
 <img width="750" height="232" alt="Neighbors R3" src="https://github.com/user-attachments/assets/03b86f96-0fae-48eb-8f37-da5fbbb6ae5c" />
+
 ### R3(CSR3) OSPF IP routes
 <img width="712" height="286" alt="show ip route ospf on R3" src="https://github.com/user-attachments/assets/53ad3394-89f5-4ee0-abac-83de50946ab6" />
 
